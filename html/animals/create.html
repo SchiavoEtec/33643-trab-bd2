@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <script type="module" src="../js/sign.js"></script>
+    <link rel="stylesheet" href="../../css/create.css">
+</head>
+<body>
+    <center>
+    <div class="container">
+        <div class="container-left"><br><br><br>
+            <p class="login-title"><br><br>Cadastro de animais</p>
+            <form action="../../php/animals/create.php" method="post" class="form-input"><br><br>
+                <div class="input-div"><br>
+                    <label for="name" class="input-lbl">Digite o seu nome</label>
+                    <input 
+                        type="text" 
+                        class="input-cadas" 
+                        id="name" 
+                        name="name"
+                    required>
+                </div>
+                <div class="input-div"><br>
+                    <label for="weight" class="input-lbl">Digite o seu peso</label>
+                    <input 
+                        type="text" 
+                        class="input-cadas" 
+                        id="weight" 
+                        name="weight"
+                    equired>
+                </div>
+                <div class="input-div"><br>
+                    <label for="register" class="input-lbl">Profira o registro do seu cachorro</label>
+                    <input 
+                        type="text" 
+                        class="input-cadas" 
+                        id="register" 
+                        name="register" 
+                    required>
+                </div>
+                <div class="input-div"><br>
+                    <label for="age" class="input-lbl">Digite a sua idade</label>
+                    <input 
+                        type="range" 
+                        max=20 
+                        min=0
+                        step=1 
+                        class="input-cadas" 
+                        id="age" 
+                        name="age"
+                    required>
+                    <p id="age-p">0</p>
+                </div>
+                <div class="input-div"><br>
+                    <label for="race" class="input-lbl">Digite a sua raça</label>
+                    <input 
+                        type="text" 
+                        class="input-cadas" 
+                        id="race" 
+                        name="race" 
+                    required> <!-- Futuramente um select -->
+                </div>
+                <div class="input-div"><br>
+                    <label for="rg" class="input-lbl">Profira seu refente registro geral</label>
+                    <input 
+                        type="text" 
+                        class="input-cadas" 
+                        id="rg" 
+                        name="rg" 
+                    required>
+                </div>
+                <div class="input-div"><br>
+                    <label for="color" class="input-lbl">Profira a cor do cachorro</label>
+                    <input 
+                        type="text" 
+                        class="input-cadas" 
+                        id="color" 
+                        name="color" 
+                    required>
+                </div>
+                <div class="input-div"><br>
+                    <label for="statusP" class="input-lbl">Profira o estado</label>
+                    <select
+                        type="text" 
+                        class="input-cadas" 
+                        id="statusP" 
+                        name="statusP" 
+                    required>
+                        <option value="bem">Bem</option>
+                        <option value="mal">Mal</option>
+                    </select>
+                </div>
+                <div class="input-div"><br>
+                    <label for="ong" class="input-lbl">Digite a sua referente ONG</label>
+                    <input 
+                        type="text" 
+                        class="input-cadas" 
+                        id="ong" 
+                        name="ong" 
+                    required>
+                </div>
+                <div class="form-buttons">
+                    <button class="btn cadas-btn" id="cadas">Cadastrar</button>
+                    
+                </div>
+            </form>
+            <center>
+                <button class="btn btn-secondary" id="cadas" onclick="window.location.href='./index.php'">Voltar</button>
+            </center>
+        </div>
+    </div>
+</body>
+</html>
+

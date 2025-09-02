@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <script type="module" src="../../js/sign.js"></script>
+    <link rel="stylesheet" href="../../css/create.css">
+</head>
+<body>
+    <center>
+    <div class="container">
+        <div class="container-left"><br><br><br>
+            <p class="login-title">Cadastro de apadrinhados</p>
+            <form action="../../php/users/create.php" method="post" class="form-input"><br><br>
+                <div class="input-div"><br>
+                    <label for="name" class="input-lbl">Digite o seu nome</label>
+                    <input 
+                        type="text" 
+                        class="input-cadas" 
+                        id="name" 
+                        name="name"
+                    required>
+                </div>
+                <div class="input-div"><br>
+                    <label for="email" class="input-lbl">Digite o seu E-mail</label>
+                    <input 
+                        type="text" 
+                        class="input-cadas" 
+                        id="email" 
+                        name="email"
+                    required>
+                </div>
+                <div class="input-div"><br>
+                    <label for="phone" class="input-lbl">Digite o seu telefone</label>
+                    <input 
+                        type="text" 
+                        class="input-cadas" 
+                        id="phone" 
+                        name="phone"
+                    equired>
+                </div>
+                <div class="input-div"><br>
+                    <label for="age" class="input-lbl">Escolha a sua idade</label>
+                    <input 
+                        type="range" 
+                        max=80
+                        min=10 
+                        step="1"
+                        class="input-cadas" 
+                        id="age" 
+                        name="age"
+                    required>
+                    <p id="age-p">10</p>
+                </div>
+                <div class="input-div"><br>
+                    <label for="country" class="input-lbl">Ecolha o país</label>
+                    <input 
+                        type="text" 
+                        class="input-cadas" 
+                        id="country" 
+                        name="country" required> <!-- Futuramente um select -->
+                </div>
+                <div class="input-div"><br>
+                    <label for="state" class="input-lbl">Escolha o estado/província</label>
+                    <input 
+                        type="text" 
+                        class="input-cadas" 
+                        id="state" 
+                        name="state" 
+                    required> <!-- Futuramente um select -->
+                </div>
+                <div class="input-div"><br>
+                    <label for="cep" class="input-lbl">Digite seu refente CEP</label>
+                    <input 
+                        type="text" 
+                        class="input-cadas" 
+                        id="cep" 
+                        name="cep" 
+                    required>
+                </div>
+                <div class="input-div"><br>
+                    <label for="cpf" class="input-lbl">Digite o seu CPF</label>
+                    <input 
+                        type="text" 
+                        class="input-cadas" 
+                        id="cpf" 
+                        name="cpf" 
+                    required>
+                </div>
+                <div class="input-div"><br>
+                    <label for="rg" class="input-lbl">Digite o seu registro geral</label>
+                    <input 
+                        type="text" 
+                        class="input-cadas" 
+                        id="rg" 
+                        name="rg" 
+                    required>
+                </div>
+                <div class="form-buttons">
+                    <button class="btn cadas-btn" id="cadas">Cadastrar</button>
+                </div>
+            </form>
+            <center>
+                <button class="btn btn-secondary" id="cadas" onclick="window.location.href='./create.php'">Voltar</button>
+            </center>
+        </div>
+    </div>
+</body>
+</html>
+
